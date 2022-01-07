@@ -1,8 +1,12 @@
 # Soulection
+
+## License
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
      
 ## Description      
 
-blah
+Music for the soul
   
 ## Table of Contents
   
@@ -18,21 +22,19 @@ blah
      
 ## Installation:
 
-npm i
+npm i 
 
 
 
 ## Usage
 
-gg
+use just like any other repo
 
-## License
 
-![License(https://img.shields.io/badge/MIT-license-green.svg)
 
 ## Contribution
 
-gg
+just do it!
 
 
 ## Tests
@@ -45,4 +47,3 @@ npm start
 Email me with any questions: momo206@uw.edu
 Find me on GitHub: [mozini206](https://github.com/mozini206)
 
-# README.md-Generator

@@ -4,31 +4,31 @@ function renderLicenseBadge(answers) {
 
     switch(answers.license){
         case 'MIT':
-            return `![License(https://img.shields.io/badge/${answers.license}-license-green.svg)`;
+            return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
             break;
 
         case 'APM':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `[![License: APM](https://img.shields.io/badge/License-APM-red.svg)`
             break;
 
         case 'NPM':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `!License: NPM](https://img.shields.io/badge/License-NPM-green.svg)`
             break;
 
         case 'GitHub':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `![License: GitHub](https://img.shields.io/badge/License-GitHub-blue.svg)`
             break;
 
         case 'DUB':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `![License: DUB](https://img.shields.io/badge/License-DUB-orange.svg)`
             break;
 
         case 'Bower':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `![License: Bower](https://img.shields.io/badge/License-Bower-yellow.svg)`
             break;
 
         case 'Hex.pm':
-            return `![Badge(https://img.shields.io/badge/${answers.license}-license-green.svg)`
+            return `![License: Hex.pm](https://img.shields.io/badge/License-Hex.pm-yellow.svg)`
             break;
 
         
@@ -55,6 +55,10 @@ function renderLicenseBadge(answers) {
   function generateMarkdown(answers) {
  
     return `# ${answers.title}
+
+## License
+
+${renderLicenseBadge(answers)}
      
 ## Description      
 
@@ -82,9 +86,7 @@ ${answers.installation}
 
 ${answers.usage}
 
-## License
 
-${renderLicenseBadge(answers)}
 
 ## Contribution
 
