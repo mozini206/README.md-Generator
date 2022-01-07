@@ -69,7 +69,7 @@ ${answers.description}
 -[Description](#description)
 -[Installation](#installation)
 -[Usage](#usage)
--[License] (#license)
+-[License](#license)
 -[Contributing](#contribution)
 -[Tests](#tests)
 -[Questions](#questions)
