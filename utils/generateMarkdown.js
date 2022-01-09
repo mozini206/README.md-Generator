@@ -3,8 +3,7 @@ function renderLicenseBadge(answers) {
 
     switch(answers.license){
         case 'MIT':
-            return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-            \n`;
+            return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
             break;
 
         case 'APM':
@@ -31,7 +30,7 @@ function renderLicenseBadge(answers) {
             return `![License: Hex.pm](https://img.shields.io/badge/License-Hex.pm-yellow.svg)`
             break;
         
-        //return empty string in a switch statement
+        
 
         
     }
@@ -40,7 +39,7 @@ function renderLicenseBadge(answers) {
   
 
   
-  // function that generates markdown for README
+  // function that generates markdown for README.md
   function generateMarkdown(answers) {
  
     return `# ${answers.title}
@@ -49,9 +48,9 @@ function renderLicenseBadge(answers) {
 
 ${renderLicenseBadge(answers)}
      
-## Description      
-
-${answers.description}
+## Description
+     
+🔍 ${answers.description}
   
 ## Table of Contents
   
@@ -72,7 +71,7 @@ ${answers.description}
   
      
 ## Installation:
-
+💾
 \`\`\`
 ${answers.installation}
 \`\`\`
@@ -80,7 +79,8 @@ ${answers.installation}
 
 
 ## Usage
-
+🖥️
+Run the following command to get started.
 \`\`\`
 ${answers.usage}
 \`\`\`
@@ -89,7 +89,7 @@ ${answers.usage}
 
 ## Contribution
 
-${answers.contribution}
+👪 ${answers.contribution}
 
 
 ## Tests
@@ -100,8 +100,8 @@ ${answers.tests}
 
 ## Questions
 
-Email me with any questions: ${answers.questions}
-Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
+📧 Email me with any questions: ${answers.questions}
+🤔 Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
 
 `;
    }

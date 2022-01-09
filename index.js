@@ -1,4 +1,6 @@
-// TODO: Include packages needed for this application
+// packages required for this project
+//inquirer - collect user input
+// fs - read, write and append files
 
 const inquirer = require("inquirer");
 const fs = require('fs')
@@ -6,19 +8,35 @@ const fs = require('fs')
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-// TODO: Create an array of questions for user input
+// The following is an array of questions for the user
 const questions = [
 
     {
         type: 'input',
         message: 'What is your gitHub username?',
-        name: 'username'
+        name: 'username',
+        validate: function(answers){
+            if(answers.length < 1){
+                console.log("Enter a valid GitHub Username....")
+            } else {
+                return true;
+            }
+            
+        }
     },
 
     {
         type: 'input',
         message: 'What is your email address?',
-        name: 'questions'
+        name: 'questions',
+        validate: function(answers){
+            if(answers.length < 1){
+                console.log('Enter a valid email address.....')
+            } else {
+                return true;
+            }
+            
+        }
     },
 
 
@@ -26,6 +44,13 @@ const questions = [
         type: 'input',
         message: "What is your project's name?",
         name: 'title',
+        validate: function(answers){
+            if(answers.length < 1){
+                console.log('Stop playing :( Enter a valid project name....')
+            } else {
+                return true;
+            }
+        }
     },
 
     {
@@ -70,14 +95,14 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
+// The following functions writes to the README.md file
 function writeToFile(fileName, data) {
     fs.writeFile('README.md',generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log('Created README.md successfully')
   );
 }
 
-// TODO: Create a function to initialize app
+// Initializes the app 
 function init() {
     inquirer
         .prompt(questions)
