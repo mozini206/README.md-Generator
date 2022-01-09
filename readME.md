@@ -6,7 +6,7 @@
      
 ## Description
      
-🔍 The following NodeJS application collects user input using the inquirer package to populate a README.md file. 
+🔍 The following NodeJS application collects user input using the inquirer package to populate a README.md file.
   
 ## Table of Contents
   
@@ -29,7 +29,7 @@
 ## Installation:
 💾
 ```
-npm init npm i inquirer
+npm i npm inquirer
 ```
 
 
@@ -38,7 +38,7 @@ npm init npm i inquirer
 🖥️
 Run the following command to get started.
 ```
-node index.js
+Run the following command to get started.
 ```
 
 
@@ -56,5 +56,6 @@ npm test
 
 ## Questions
 
-🤔 📧 Find me on GitHub: [mozini206](https://github.com/mozini206)
+📧 Email me with any questions: momo206@uw.edu
+🤔 Find me on GitHub: [mozini206](https://github.com/mozini206)
 
