@@ -1,10 +1,10 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// renders license badge and link
 function renderLicenseBadge(answers) {
 
     switch(answers.license){
         case 'MIT':
-            return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+            return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+            \n`;
             break;
 
         case 'APM':
@@ -30,28 +30,17 @@ function renderLicenseBadge(answers) {
         case 'Hex.pm':
             return `![License: Hex.pm](https://img.shields.io/badge/License-Hex.pm-yellow.svg)`
             break;
+        
+        //return empty string in a switch statement
 
         
     }
   
   } 
   
-  // TODO: Create a function that returns the license link
-  // If there is no license, return an empty string
-  function renderLicenseLink(license) {
+
   
-  
-  
-  }
-  
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
-  function renderLicenseSection(license) {
-  
-  
-  }
-  
-  // TODO: Create a function to generate markdown for README
+  // function that generates markdown for README
   function generateMarkdown(answers) {
  
     return `# ${answers.title}
@@ -66,25 +55,35 @@ ${answers.description}
   
 ## Table of Contents
   
--[Description](#description)
--[Installation](#installation)
--[Usage](#usage)
--[License](#license)
--[Contributing](#contribution)
--[Tests](#tests)
--[Questions](#questions)
+*[Description](#description)
+
+*[Installation](#installation)
+
+*[Usage](#usage)
+
+*[License](#license)
+
+*[Contributing](#contribution)
+
+*[Tests](#tests)
+
+*[Questions](#questions)
 
   
      
 ## Installation:
 
+\`\`\`
 ${answers.installation}
+\`\`\`
 
 
 
 ## Usage
 
+\`\`\`
 ${answers.usage}
+\`\`\`
 
 
 
@@ -94,8 +93,9 @@ ${answers.contribution}
 
 
 ## Tests
-
+\`\`\`
 ${answers.tests}
+\`\`\`
 
 
 ## Questions

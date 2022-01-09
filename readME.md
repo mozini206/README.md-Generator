@@ -3,6 +3,8 @@
 ## License
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+            
+
      
 ## Description      
 
@@ -10,25 +12,35 @@ Since 2011, Soulection has been a cornerstone of creativity for innovative music
   
 ## Table of Contents
   
--[Description](#description)
--[Installation](#installation)
--[Usage](#usage)
--[License](#license)
--[Contributing](#contribution)
--[Tests](#tests)
--[Questions](#questions)
+*[Description](#description)
+
+*[Installation](#installation)
+
+*[Usage](#usage)
+
+*[License](#license)
+
+*[Contributing](#contribution)
+
+*[Tests](#tests)
+
+*[Questions](#questions)
 
   
      
 ## Installation:
 
+```
 npm i
+```
 
 
 
 ## Usage
 
-music :)
+```
+music dev
+```
 
 
 
@@ -38,8 +50,9 @@ just do it
 
 
 ## Tests
-
+```
 npm start
+```
 
 
 ## Questions
